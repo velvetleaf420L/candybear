@@ -1144,3 +1144,28 @@ right:5px;
 
 
 }
+
+/* MENU BANNER */
+
+.menu-banner{
+
+max-width:1200px;
+
+margin:50px auto;
+
+padding:20px;
+
+}
+
+
+.menu-banner img{
+
+width:100%;
+
+border-radius:35px;
+
+box-shadow:
+
+0 20px 50px rgba(75,48,37,.15);
+
+}
