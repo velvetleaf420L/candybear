@@ -1212,3 +1212,95 @@ border-radius:25px;
 
 
 }
+
+
+/* ==========================
+MENU CATEGORY
+========================== */
+
+
+.menu-info{
+
+max-width:1200px;
+
+margin:50px auto;
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+}
+
+
+
+.menu-category{
+
+background:white;
+
+padding:30px;
+
+border-radius:30px;
+
+box-shadow:
+
+0 15px 35px rgba(75,48,37,.1);
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+
+
+.menu-category:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+
+.menu-category h2{
+
+font-size:28px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.menu-category p{
+
+font-size:18px;
+
+color:#806554;
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+.menu-info{
+
+grid-template-columns:1fr;
+
+margin:30px 15px;
+
+}
+
+
+.menu-category{
+
+padding:25px;
+
+}
+
+
+}
