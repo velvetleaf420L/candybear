@@ -886,6 +886,17 @@ MOBILE
 
 @media(max-width:768px){
 
+.button,
+.telegram{
+
+display:block;
+
+width:fit-content;
+
+margin:12px auto;
+
+}
+
 
 
 .header{
