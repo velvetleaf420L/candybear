@@ -719,3 +719,157 @@
     font-size:23px !important;
   }
 }
+
+
+/* =========================================
+   FINAL ABOUT HERO — NO CB, LIGHT DECOR ONLY
+========================================= */
+
+.about-hero-clean{
+  min-height:430px !important;
+  grid-template-columns:minmax(0,1fr) 300px !important;
+  padding:52px 58px !important;
+}
+
+.about-hero-clean .about-hero-copy h1{
+  margin-bottom:18px !important;
+  line-height:.92 !important;
+}
+
+.about-hero-clean .about-hero-copy h1 span{
+  display:inline-block;
+  color:#6f472f;
+}
+
+.about-decoration{
+  position:relative;
+  min-height:280px !important;
+  overflow:hidden;
+}
+
+.about-decoration::before,
+.about-decoration::after{
+  content:none !important;
+  display:none !important;
+}
+
+.decor-soft-circle{
+  position:absolute;
+  display:block;
+  border-radius:50%;
+  border:1px solid rgba(122,77,43,.10);
+}
+
+.decor-soft-one{
+  width:210px;
+  height:210px;
+  left:42px;
+  top:32px;
+  background:
+    radial-gradient(circle at 35% 30%,rgba(246,184,197,.34),transparent 42%),
+    radial-gradient(circle at 70% 70%,rgba(163,184,116,.28),transparent 44%),
+    rgba(255,247,234,.85);
+  box-shadow:0 24px 46px rgba(75,48,37,.08);
+}
+
+.decor-soft-two{
+  width:82px;
+  height:82px;
+  right:8px;
+  top:4px;
+  background:rgba(255,227,181,.55);
+}
+
+.decor-leaf{
+  position:absolute;
+  left:8px;
+  top:48px;
+  font-size:42px;
+  transform:rotate(-12deg);
+}
+
+.decor-star-one{
+  top:18px;
+  left:120px;
+}
+
+.decor-star-two{
+  right:14px;
+  bottom:34px;
+}
+
+.decor-heart{
+  right:62px;
+  top:78px;
+}
+
+@media(max-width:900px){
+  .about-hero-clean{
+    grid-template-columns:1fr !important;
+    min-height:auto !important;
+    padding:36px 28px !important;
+  }
+
+  .about-decoration{
+    min-height:210px !important;
+    order:-1;
+  }
+
+  .decor-soft-one{
+    width:170px;
+    height:170px;
+    left:50%;
+    top:18px;
+    transform:translateX(-50%);
+  }
+
+  .decor-soft-two{
+    width:62px;
+    height:62px;
+    right:12%;
+  }
+
+  .decor-leaf{
+    left:18%;
+    top:42px;
+    font-size:34px;
+  }
+
+  .decor-star-one{
+    left:39%;
+    top:8px;
+  }
+
+  .decor-heart{
+    right:24%;
+    top:62px;
+  }
+}
+
+@media(max-width:620px){
+  .about-hero-clean{
+    padding:26px 20px !important;
+  }
+
+  .about-decoration{
+    min-height:180px !important;
+  }
+
+  .decor-soft-one{
+    width:145px;
+    height:145px;
+  }
+
+  .decor-soft-two{
+    width:48px;
+    height:48px;
+  }
+
+  .about-hero-copy h1{
+    font-size:38px !important;
+  }
+
+  .about-tagline{
+    font-size:21px !important;
+  }
+}
