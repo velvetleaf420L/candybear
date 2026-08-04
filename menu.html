@@ -1,402 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Candy Bear | Menu</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candy Bear | Menu</title>
+  <meta name="description" content="Explore the Candy Bear menu and product categories.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
-
 <body>
 
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Candy Bear home">
+    <img src="images/logo.png" alt="Candy Bear">
+    <span><strong>CANDY BEAR</strong><small>PREMIUM CARTOON COLLECTION</small></span>
+  </a>
 
-<header class="header">
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+  </nav>
 
+  <a class="header-telegram" href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">
+    Telegram
+  </a>
 
-<div class="logo">
-
-<img src="images/logo.png" alt="Candy Bear">
-
-</div>
-
-
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="menu.html">Menu</a>
-<a href="products.html">Products</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-
-
-<div class="menu-btn" onclick="openMenu()">
-
-☰
-
-</div>
-
-
+  <button class="menu-btn" type="button" onclick="openMenu()" aria-label="Open menu">☰</button>
 </header>
 
-
-
-
-
-<!-- MOBILE MENU -->
-
 <div class="mobile-menu" id="mobileMenu">
-
-
-<a href="index.html">
-Home
-</a>
-
-
-<a href="menu.html">
-Menu
-</a>
-
-
-<a href="products.html">
-Products
-</a>
-
-
-<a href="about.html">
-About
-</a>
-
-
-<a href="delivery.html">
-Delivery
-</a>
-
-
-<a href="contact.html">
-Contact
-</a>
-
-
-<a href="https://t.me/CandyBearHQ" class="telegram">
-
-Telegram
-
-</a>
-
-
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="delivery.html">Delivery</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://t.me/CandyBearHQ" class="telegram" target="_blank" rel="noopener noreferrer">Telegram</a>
 </div>
 
 
-
-
-
-
-
-<section class="collection">
-
-
-<h1>
-Candy Bear Menu
-</h1>
-
-
-<p>
-Explore our complete collection.
-</p>
-
-<div class="menu-banner">
-
-<img src="images/menu.png" alt="Candy Bear Menu">
-
-</div>
-
-
-<div class="products">
-
-  
-
-<div class="product-card">
-
-<img src="images/products/ak.png">
-
-<h3>
-AK
-</h3>
-
-<p>
-Classic Collection
-</p>
-
-<a href="products.html">
-View
-</a>
-
-</div>
-
-
-
-
-
-<div class="product-card">
-
-<img src="images/products/mango.png">
-
-<h3>
-Mango
-</h3>
-
-<p>
-Fruit Collection
-</p>
-
-<a href="products.html">
-View
-</a>
-
-</div>
-
-
-
-
-
-<div class="product-card">
-
-<img src="images/products/9lb-hammer.png">
-
-<h3>
-9LB Hammer
-</h3>
-
-<p>
-Indica Collection
-</p>
-
-<a href="products.html">
-View
-</a>
-
-</div>
-
-
-
-
-
-<div class="product-card">
-
-<img src="images/products/superboof.png">
-
-<h3>
-Super Boof
-</h3>
-
-<p>
-Hybrid Collection
-</p>
-
-<a href="products.html">
-View
-</a>
-
-</div>
-
-
-
-
-
-<div class="product-card">
-
-<img src="images/products/lemon.png">
-
-<h3>
-Lemon Kush
-</h3>
-
-<p>
-Sativa Collection
-</p>
-
-<a href="products.html">
-View
-</a>
-
-</div>
-
-
-
-
-
-<div class="product-card">
-
-<img src="images/products/white-rhino.png">
-
-<h3>
-White Rhino
-</h3>
-
-<p>
-Premium Collection
-</p>
-
-<a href="products.html">
-View
-</a>
-
-</div>
-
-
-
-
-
-<div class="product-card">
-
-<img src="images/products/gummies.png">
-
-<h3>
-Gummies
-</h3>
-
-<p>
-Candy Collection
-</p>
-
-<a href="products.html">
-View
-</a>
-
-</div>
-
-
-
-
-
-<div class="product-card">
-
-<img src="images/products/cookies.png">
-
-<h3>
-Cookies
-</h3>
-
-<p>
-Sweet Collection
-</p>
-
-<a href="products.html">
-View
-</a>
-
-</div>
-
-
-
-
-
-<div class="product-card">
-
-<img src="images/products/thc-carts.png">
-
-<h3>
-THC Carts
-</h3>
-
-<p>
-Vape Collection
-</p>
-
-<a href="products.html">
-View
-</a>
-
-</div>
-
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<section class="about-preview">
-
-
-<h2>
-Need Help?
-</h2>
-
-
-<p>
-Contact Candy Bear directly.
-</p>
-
-
-
-<a href="https://t.me/CandyBearHQ" class="button">
-
-Telegram @CandyBearHQ
-
-</a>
-
-
-</section>
-
-
-
-
-
-
-
-
-<footer>
-
-
-<div class="footer-logo">
-
-<img src="images/logo.png">
-
-</div>
-
-
-<p>
-© Candy Bear. All Rights Reserved.
-</p>
-
-
-
-<a href="https://t.me/CandyBearHQ" class="telegram">
-
-Contact Telegram
-
-</a>
-
-
+<main>
+  <section class="page-hero">
+    <p class="eyebrow">OFFICIAL MENU</p>
+    <h1>Candy Bear Menu</h1>
+    <p>Product information arranged clearly for mobile and desktop.</p>
+  </section>
+
+  <section class="menu-category-section">
+    <img class="collection-banner" src="images/banners/flower-banner.jpg" alt="Candy Bear Flower Collection">
+    <div class="category-title">
+      <span>FLOWER COLLECTION</span>
+      <h2>Colourful character cards.</h2>
+    </div>
+
+    <div class="menu-product-grid">
+      <article class="menu-product"><img src="images/products/ak.png" alt="AK"><div class="menu-product-body"><small>CLASSIC • SATIVA</small><h3>AK</h3><strong>THC 18–22%</strong><p>Energetic • Focused • Daytime</p><a href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">Ask on Telegram</a></div></article>
+      <article class="menu-product"><img src="images/products/lemon.png" alt="Lemon Kush"><div class="menu-product-body"><small>SIGNATURE • SATIVA</small><h3>Lemon Kush</h3><strong>THC 20–24%</strong><p>Clear Head • Uplifting • Functional</p><a href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">Ask on Telegram</a></div></article>
+      <article class="menu-product"><img src="images/products/white-rhino.png" alt="White Rhino"><div class="menu-product-body"><small>PREMIUM • INDICA</small><h3>White Rhino</h3><strong>THC 18–22%</strong><p>Heavy Body • Night Profile</p><a href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">Ask on Telegram</a></div></article>
+      <article class="menu-product"><img src="images/products/mango.png" alt="Mango"><div class="menu-product-body"><small>PREMIUM • SATIVA</small><h3>Mango</h3><strong>THC 20–24%</strong><p>Uplifting • Energetic • Functional</p><a href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">Ask on Telegram</a></div></article>
+      <article class="menu-product"><img src="images/products/superboof.png" alt="Super Boof"><div class="menu-product-body"><small>ELITE • HYBRID</small><h3>Super Boof</h3><strong>THC 26–28%</strong><p>Giggly • Euphoric • Focused</p><a href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">Ask on Telegram</a></div></article>
+      <article class="menu-product"><img src="images/products/9lb-hammer.png" alt="9LB Hammer"><div class="menu-product-body"><small>ELITE • INDICA</small><h3>9LB Hammer</h3><strong>THC 20%+</strong><p>Deep Body Relax • Sleepy • Tingly</p><a href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">Ask on Telegram</a></div></article>
+    </div>
+  </section>
+
+  <section class="menu-category-section tinted">
+    <img class="collection-banner" src="images/banners/edibles-banner.jpg" alt="Candy Bear Edibles Collection">
+    <div class="category-title">
+      <span>SWEET COLLECTION</span>
+      <h2>Edibles and sweet treats.</h2>
+    </div>
+
+    <div class="menu-product-grid two">
+      <article class="menu-product"><img src="images/products/gummies.png" alt="Gummies"><div class="menu-product-body"><small>EDIBLES</small><h3>Gummies</h3><strong>600mg • 6 pcs</strong><p>Colourful Candy Bear sweet collection.</p><a href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">Ask on Telegram</a></div></article>
+      <article class="menu-product"><img src="images/products/cookies.png" alt="Cookies"><div class="menu-product-body"><small>EDIBLES</small><h3>Cookies</h3><strong>40mg each</strong><p>Soft-baked Candy Bear presentation.</p><a href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">Ask on Telegram</a></div></article>
+    </div>
+  </section>
+
+  <section class="menu-category-section">
+    <img class="collection-banner" src="images/banners/vape-banner.jpg" alt="Candy Bear Vape Collection">
+    <div class="category-title">
+      <span>VAPE COLLECTION</span>
+      <h2>Smooth and playful presentation.</h2>
+    </div>
+
+    <div class="menu-product-grid one">
+      <article class="menu-product"><img src="images/products/thc-carts.png" alt="THC Carts"><div class="menu-product-body"><small>VAPE COLLECTION</small><h3>THC Carts</h3><strong>Ask for current options</strong><p>Smooth Candy Bear vape collection.</p><a href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">Ask on Telegram</a></div></article>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div><p class="eyebrow">QUESTIONS?</p><h2>Message Candy Bear directly.</h2></div>
+    <a class="button primary" href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">Open Telegram</a>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <img src="images/logo.png" alt="Candy Bear">
+  <h2>Candy Bear</h2>
+  <p>Soft colours. Playful characters. Premium presentation.</p>
+  <a href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">Contact on Telegram</a>
+  <small>© Candy Bear. All Rights Reserved.</small>
 </footer>
 
-
-
-
-
-
+<a class="floating-telegram" href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer" aria-label="Open Telegram">💬</a>
 <script src="js/script.js"></script>
 
-
 </body>
-
 </html>

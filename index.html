@@ -1,250 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="google-site-verification" content="xN2Q-KKrmXBWklt_lFmFSE3WWHjgfFW28_IW9cWNaM0" />
-
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SV4ZE1CE3V"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-SV4ZE1CE3V');
-</script>
-
-<title>Candy Bear | Premium Collection</title>
-
-<meta name="description" content="Candy Bear Premium Collection">
-
-<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candy Bear | Premium Cartoon Collection</title>
+  <meta name="description" content="Explore the Candy Bear premium cartoon collection.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<header class="header">
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Candy Bear home">
+    <img src="images/logo.png" alt="Candy Bear">
+    <span><strong>CANDY BEAR</strong><small>PREMIUM CARTOON COLLECTION</small></span>
+  </a>
 
-<div class="logo">
-<img src="images/logo.png" alt="Candy Bear">
-</div>
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+  </nav>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="menu.html">Menu</a>
-<a href="products.html">Products</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
+  <a class="header-telegram" href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">
+    Telegram
+  </a>
 
-<div class="menu-btn" onclick="openMenu()">
-☰
-</div>
-
+  <button class="menu-btn" type="button" onclick="openMenu()" aria-label="Open menu">☰</button>
 </header>
 
-<!-- MOBILE MENU -->
-
 <div class="mobile-menu" id="mobileMenu">
-
-<a href="index.html">Home</a>
-
-<a href="menu.html">Menu</a>
-
-<a href="products.html">Products</a>
-
-<a href="about.html">About</a>
-
-<a href="delivery.html">Delivery</a>
-
-<a href="contact.html">Contact</a>
-
-<a href="https://t.me/CandyBearHQ" class="telegram">
-Telegram
-</a>
-
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="delivery.html">Delivery</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://t.me/CandyBearHQ" class="telegram" target="_blank" rel="noopener noreferrer">Telegram</a>
 </div>
 
-<section class="hero">
 
-<div class="hero-text">
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">WELCOME TO CANDY BEAR</p>
+      <h1>Sweet style.<br><em>Premium character.</em></h1>
+      <p>A playful collection built around warm colours, collectible artwork and a friendly Candy Bear world.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="menu.html">Explore Menu</a>
+        <a class="button secondary" href="products.html">Browse Products</a>
+        <a class="button secondary" href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">Telegram</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="images/hero.png" alt="Candy Bear hero artwork">
+    </div>
+  </section>
 
-<h1>
-Candy Bear
-</h1>
+  <section class="feature-strip">
+    <article><span>01</span><h2>Playful Design</h2><p>Rounded, warm and instantly recognisable.</p></article>
+    <article><span>02</span><h2>Clear Collection</h2><p>Easy product browsing on mobile and desktop.</p></article>
+    <article><span>03</span><h2>Direct Support</h2><p>Quick access to Candy Bear on Telegram.</p></article>
+  </section>
 
-<h2>
-Sweet style.<br>
-Premium experience.
-</h2>
+  <section class="section-shell">
+    <div class="section-heading">
+      <p class="eyebrow">FEATURED COLLECTION</p>
+      <h2>Meet the Candy Bear favourites.</h2>
+      <p>Colourful product cards with a consistent premium cartoon identity.</p>
+    </div>
 
-<p>
-A unique collection with a cute character,
-clean design and premium feeling.
-</p>
+    <div class="product-grid">
+      <article class="product-card"><img src="images/products/ak.png" alt="AK"><div><small>CLASSIC</small><h3>AK</h3><p>Energetic • Focused • Daytime</p><a href="products.html#ak">View Details</a></div></article>
+      <article class="product-card"><img src="images/products/lemon.png" alt="Lemon Kush"><div><small>SIGNATURE</small><h3>Lemon Kush</h3><p>Clear Head • Uplifting • Functional</p><a href="products.html#lemon-kush">View Details</a></div></article>
+      <article class="product-card"><img src="images/products/superboof.png" alt="Super Boof"><div><small>ELITE RESERVE</small><h3>Super Boof</h3><p>Giggly • Euphoric • Focused</p><a href="products.html#super-boof">View Details</a></div></article>
+    </div>
 
-<a href="products.html" class="button">
-View Products
-</a>
+    <div class="center-action"><a class="button primary" href="products.html">View Full Collection</a></div>
+  </section>
 
-<a href="https://t.me/CandyBearHQ" class="button">
-Telegram
-</a>
+  <section class="brand-story">
+    <div>
+      <p class="eyebrow">THE CANDY BEAR WORLD</p>
+      <h2>Designed to feel collectible.</h2>
+      <p>Each card uses the same soft shapes, warm palette and character-led presentation so the whole website feels like one connected brand.</p>
+      <a class="button secondary" href="about.html">About Candy Bear</a>
+    </div>
+    <img src="images/logo.png" alt="Candy Bear logo">
+  </section>
 
-</div>
+  <section class="final-cta">
+    <div><p class="eyebrow">NEED HELP?</p><h2>Talk directly with Candy Bear.</h2></div>
+    <a class="button primary" href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">Open Telegram</a>
+  </section>
+</main>
 
-<div class="hero-image">
-<img src="images/hero.png" alt="Candy Bear">
-</div>
 
-</section>
-
-<section class="features">
-
-<div class="feature-card">
-
-<div class="icon">
-🐻
-</div>
-
-<h3>
-Cute Character
-</h3>
-
-<p>
-Designed with our Candy Bear mascot.
-</p>
-
-</div>
-
-<div class="feature-card">
-
-<div class="icon">
-🌿
-</div>
-
-<h3>
-Premium Style
-</h3>
-
-<p>
-Modern design inspired by nature.
-</p>
-
-</div>
-
-<div class="feature-card">
-
-<div class="icon">
-✨
-</div>
-
-<h3>
-Quality Experience
-</h3>
-
-<p>
-Simple and memorable.
-</p>
-
-</div>
-
-</section>
-
-<section class="collection">
-
-<h2>
-Featured Collection
-</h2>
-
-<p>
-Explore our latest selections.
-</p>
-
-<div class="products">
-
-<div class="product-card">
-<img src="images/products/ak.png" alt="AK">
-<h3>AK</h3>
-<a href="products.html">View</a>
-</div>
-
-<div class="product-card">
-<img src="images/products/mango.png" alt="Mango">
-<h3>Mango</h3>
-<a href="products.html">View</a>
-</div>
-
-<div class="product-card">
-<img src="images/products/superboof.png" alt="Super Boof">
-<h3>Super Boof</h3>
-<a href="products.html">View</a>
-</div>
-
-<div class="product-card">
-<img src="images/products/lemon.png" alt="Lemon Kush">
-<h3>Lemon Kush</h3>
-<a href="products.html">View</a>
-</div>
-
-<div class="product-card">
-<img src="images/products/white-rhino.png" alt="White Rhino">
-<h3>White Rhino</h3>
-<a href="products.html">View</a>
-</div>
-
-<div class="product-card">
-<img src="images/products/thc-carts.png" alt="THC Carts">
-<h3>THC Carts</h3>
-<a href="products.html">View</a>
-</div>
-
-</div>
-
-</section>
-
-<section class="about-preview">
-
-<img src="images/logo.png" alt="Candy Bear">
-
-<h2>
-Welcome to Candy Bear
-</h2>
-
-<p>
-A playful brand combining cute design,
-premium quality and memorable experience.
-</p>
-
-<a href="about.html" class="button">
-Learn More
-</a>
-
-</section>
-
-<footer>
-
-<div class="footer-logo">
-<img src="images/logo.png" alt="Candy Bear Logo">
-</div>
-
-<p>
-© Candy Bear. All Rights Reserved.
-</p>
-
-<a href="https://t.me/CandyBearHQ" class="telegram">
-Telegram @CandyBearHQ
-</a>
-
+<footer class="site-footer">
+  <img src="images/logo.png" alt="Candy Bear">
+  <h2>Candy Bear</h2>
+  <p>Soft colours. Playful characters. Premium presentation.</p>
+  <a href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer">Contact on Telegram</a>
+  <small>© Candy Bear. All Rights Reserved.</small>
 </footer>
 
+<a class="floating-telegram" href="https://t.me/CandyBearHQ" target="_blank" rel="noopener noreferrer" aria-label="Open Telegram">💬</a>
 <script src="js/script.js"></script>
 
 </body>
