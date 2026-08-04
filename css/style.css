@@ -404,3 +404,15 @@ body.products-page .floating-telegram{
     margin-top:20px !important;
   }
 }
+
+
+.menu-product-body{
+  display:flex;
+  flex-direction:column;
+}
+.effect-list{
+  margin-bottom:22px;
+}
+.menu-product-body > a{
+  margin-top:auto;
+}
