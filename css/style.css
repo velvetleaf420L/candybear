@@ -367,18 +367,10 @@ body.mobile-menu-open{
 
 
 /* Mobile fix: prevent floating Telegram button from covering product cards */
-@media(max-width:620px){
-  body.menu-page .floating-telegram,
-  body.products-page .floating-telegram{
-    display:none;
-  }
-}
+
 
 /* Definitive product-page fix */
-body.menu-page .floating-telegram,
-body.products-page .floating-telegram{
-  display:none !important;
-}
+
 
 
 /* Card button spacing and overlay fix — 2026-08-05 */
@@ -395,9 +387,6 @@ body.products-page .floating-telegram{
   z-index:1;
   flex:none;
   margin-top:22px !important;
-}
-.floating-telegram{
-  display:none !important;
 }
 @media(max-width:620px){
   .menu-product-body > a{
@@ -746,5 +735,130 @@ strong.thc-badge{
     color:#7a4d2b !important;
     white-space:nowrap !important;
     box-shadow:0 4px 12px rgba(122,77,43,.08) !important;
+  }
+}
+
+
+/* Telegram floating button on every page */
+.floating-telegram{
+  position:fixed !important;
+  right:18px !important;
+  bottom:18px !important;
+  z-index:9999 !important;
+  width:56px !important;
+  height:56px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  border:3px solid #fff !important;
+  border-radius:50% !important;
+  background:#7a4d2b !important;
+  color:#fff !important;
+  text-decoration:none !important;
+  font-size:23px !important;
+  line-height:1 !important;
+  box-shadow:0 14px 30px rgba(75,48,37,.25) !important;
+  box-sizing:border-box !important;
+}
+
+.floating-telegram span{
+  display:block !important;
+  transform:translate(-1px,1px) !important;
+}
+
+body{
+  padding-bottom:88px;
+}
+
+@media(max-width:620px){
+  .floating-telegram{
+    right:14px !important;
+    bottom:16px !important;
+    width:52px !important;
+    height:52px !important;
+    font-size:21px !important;
+  }
+
+  body{
+    padding-bottom:84px;
+  }
+
+  .menu-product:last-of-type,
+  .product-card:last-of-type{
+    margin-bottom:18px;
+  }
+}
+
+
+/* Candy Bear visible customer-service chat button */
+#floatingChat.floating-chat{
+  position:fixed !important;
+  right:18px !important;
+  bottom:18px !important;
+  z-index:2147483647 !important;
+  display:inline-flex !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:8px !important;
+  width:auto !important;
+  min-width:112px !important;
+  height:54px !important;
+  padding:0 18px !important;
+  border:3px solid #ffffff !important;
+  border-radius:999px !important;
+  background:#7a4d2b !important;
+  color:#ffffff !important;
+  text-decoration:none !important;
+  font-family:"Nunito",Arial,sans-serif !important;
+  font-size:15px !important;
+  font-weight:900 !important;
+  line-height:1 !important;
+  box-shadow:0 14px 34px rgba(75,48,37,.32) !important;
+  box-sizing:border-box !important;
+  transform:none !important;
+  overflow:visible !important;
+}
+
+#floatingChat .floating-chat-icon{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  font-size:22px !important;
+  line-height:1 !important;
+}
+
+#floatingChat .floating-chat-label{
+  display:inline-block !important;
+  color:#ffffff !important;
+  font-size:15px !important;
+  font-weight:900 !important;
+  line-height:1 !important;
+}
+
+body{
+  padding-bottom:92px !important;
+}
+
+@media(max-width:620px){
+  #floatingChat.floating-chat{
+    right:14px !important;
+    bottom:14px !important;
+    min-width:104px !important;
+    height:50px !important;
+    padding:0 15px !important;
+  }
+
+  #floatingChat .floating-chat-icon{
+    font-size:20px !important;
+  }
+
+  #floatingChat .floating-chat-label{
+    font-size:14px !important;
+  }
+
+  body{
+    padding-bottom:86px !important;
   }
 }
