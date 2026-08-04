@@ -31,8 +31,6 @@ function closeMenu(){
 
 
 
-
-
 document.addEventListener("click", function(e){
 
     const menu = document.getElementById("mobileMenu");
@@ -71,129 +69,209 @@ const products = {
 
 
 
-    ak:{
+ak:{
 
-        name:"AK",
+name:"AK",
 
-        image:"images/products/ak.png",
+image:"images/products/ak.png",
 
-        description:"Candy Bear Collection item.",
+description:
+"Classic Collection",
 
-        info:"Product information will appear here."
+info:
+"Type: Sativa<br><br>\
+THC: 18–22%<br><br>\
+Effects:<br>\
+⚡ Energetic<br>\
+🎯 Focused<br>\
+☀️ Daytime"
 
-    },
 
+},
 
 
-    mango:{
 
-        name:"Mango",
 
-        image:"images/products/mango.png",
 
-        description:"Candy Bear Collection item.",
+mango:{
 
-        info:"Product information will appear here."
+name:"Mango",
 
-    },
+image:"images/products/mango.png",
 
+description:
+"Fruit Collection",
 
+info:
+"Type: Hybrid<br><br>\
+THC: 18–24%<br><br>\
+Effects:<br>\
+🥭 Happy<br>\
+😌 Relaxed<br>\
+✨ Euphoric"
 
-    "9lb-hammer":{
 
-        name:"9LB Hammer",
+},
 
-        image:"images/products/9lb-hammer.png",
 
-        description:"Candy Bear Collection item.",
 
-        info:"Product information will appear here."
 
-    },
 
+"9lb-hammer":{
 
+name:"9LB Hammer",
 
-    superboof:{
+image:"images/products/9lb-hammer.png",
 
-        name:"Super Boof",
+description:
+"Elite Reserve Collection",
 
-        image:"images/products/superboof.png",
+info:
+"Type: Indica<br><br>\
+THC: 23–28%<br><br>\
+Effects:<br>\
+🔨 Heavy body relaxation<br>\
+🌙 Nighttime use<br>\
+😴 Sedating"
 
-        description:"Candy Bear Collection item.",
 
-        info:"Product information will appear here."
+},
 
-    },
 
 
 
-    lemon:{
 
-        name:"Lemon Kush",
+superboof:{
 
-        image:"images/products/lemon.png",
+name:"Super Boof",
 
-        description:"Candy Bear Collection item.",
+image:"images/products/superboof.png",
 
-        info:"Product information will appear here."
+description:
+"Elite Reserve Collection",
 
-    },
+info:
+"Type: Hybrid<br><br>\
+THC: 24–30%<br><br>\
+Effects:<br>\
+🍊 Euphoric<br>\
+🎨 Creative<br>\
+✨ Smooth smoke"
 
 
+},
 
-    "white-rhino":{
 
-        name:"White Rhino",
 
-        image:"images/products/white-rhino.png",
 
-        description:"Candy Bear Collection item.",
 
-        info:"Product information will appear here."
+lemon:{
 
-    },
+name:"Lemon Kush",
 
+image:"images/products/lemon.png",
 
+description:
+"Signature Collection",
 
-    gummies:{
+info:
+"Type: Sativa<br><br>\
+THC: 19–23%<br><br>\
+Effects:<br>\
+🍋 Uplifting<br>\
+⚡ Light energy<br>\
+🌿 Smooth"
 
-        name:"Gummies",
 
-        image:"images/products/gummies.png",
+},
 
-        description:"Candy Bear Collection item.",
 
-        info:"Product information will appear here."
 
-    },
 
 
+"white-rhino":{
 
-    cookies:{
+name:"White Rhino",
 
-        name:"Cookies",
+image:"images/products/white-rhino.png",
 
-        image:"images/products/cookies.png",
+description:
+"Premium Collection",
 
-        description:"Candy Bear Collection item.",
+info:
+"Type: Indica<br><br>\
+THC: 18–22%<br><br>\
+Effects:<br>\
+🦏 Heavy body relaxation<br>\
+😌 Calm<br>\
+🌙 Long-lasting"
 
-        info:"Product information will appear here."
 
-    },
+},
 
 
 
-    "thc-carts":{
 
-        name:"THC Carts",
 
-        image:"images/products/thc-carts.png",
+gummies:{
 
-        description:"Candy Bear Collection item.",
+name:"Gummies",
 
-        info:"Product information will appear here."
+image:"images/products/gummies.png",
 
-    }
+description:
+"Candy Collection",
+
+info:
+"Edible Collection<br><br>\
+600mg | 6 pcs<br><br>\
+Sweet Candy Style<br>\
+Relaxing Experience"
+
+
+},
+
+
+
+
+
+cookies:{
+
+name:"Cookies",
+
+image:"images/products/cookies.png",
+
+description:
+"Sweet Collection",
+
+info:
+"Premium Cookie Collection<br><br>\
+Infused Style<br><br>\
+Sweet Taste Experience"
+
+
+},
+
+
+
+
+
+"thc-carts":{
+
+name:"THC Carts",
+
+image:"images/products/thc-carts.png",
+
+description:
+"Vape Collection",
+
+info:
+"High Potency Vape<br><br>\
+1ml Cartridge<br><br>\
+Premium Collection"
+
+
+}
 
 
 };
@@ -220,45 +298,45 @@ const productID = params.get("id");
 if(productID && products[productID]){
 
 
-    const image = document.getElementById("productImage");
+const image = document.getElementById("productImage");
 
-    const name = document.getElementById("productName");
+const name = document.getElementById("productName");
 
-    const description = document.getElementById("productDescription");
+const description = document.getElementById("productDescription");
 
-    const info = document.getElementById("productInfo");
-
-
-
-    if(image){
-
-        image.src = products[productID].image;
-
-    }
+const info = document.getElementById("productInfo");
 
 
 
-    if(name){
+if(image){
 
-        name.innerHTML = products[productID].name;
+image.src = products[productID].image;
 
-    }
-
-
-
-    if(description){
-
-        description.innerHTML = products[productID].description;
-
-    }
+}
 
 
 
-    if(info){
+if(name){
 
-        info.innerHTML = products[productID].info;
+name.innerHTML = products[productID].name;
 
-    }
+}
+
+
+
+if(description){
+
+description.innerHTML = products[productID].description;
+
+}
+
+
+
+if(info){
+
+info.innerHTML = products[productID].info;
+
+}
 
 
 }
