@@ -617,3 +617,134 @@ body.products-page .floating-telegram{
     white-space:normal;
   }
 }
+
+
+/* Definitive THC badge styling for <strong> elements */
+strong.thc-badge{
+  display:inline-flex !important;
+  align-items:center !important;
+  align-self:flex-start !important;
+  width:auto !important;
+  max-width:max-content !important;
+  min-height:30px !important;
+  margin:0 0 12px !important;
+  padding:6px 11px !important;
+  border-radius:999px !important;
+  background:#f4e3c8 !important;
+  border:1px solid rgba(122,77,43,.12) !important;
+  color:#6f472f !important;
+  font-size:12px !important;
+  font-weight:900 !important;
+  line-height:1 !important;
+  white-space:nowrap !important;
+  box-sizing:border-box !important;
+}
+
+@media(max-width:620px){
+  .menu-product-body strong.thc-badge{
+    display:inline-flex !important;
+    width:auto !important;
+    max-width:max-content !important;
+    padding:6px 11px !important;
+    border-radius:999px !important;
+    background:#f4e3c8 !important;
+    border:1px solid rgba(122,77,43,.12) !important;
+    color:#6f472f !important;
+  }
+}
+
+
+/* Mobile Flavour / Best For information card fix */
+@media(max-width:620px){
+  .menu-product-body .product-details-extra,
+  .menu-product .product-details-extra,
+  .product-card .product-details-extra{
+    display:grid !important;
+    width:100% !important;
+    min-height:auto !important;
+    margin:14px 0 14px !important;
+    padding:14px !important;
+    gap:12px !important;
+    border:1px solid rgba(122,77,43,.14) !important;
+    border-radius:18px !important;
+    background:rgba(255,248,237,.92) !important;
+    box-shadow:0 8px 20px rgba(122,77,43,.06) !important;
+    box-sizing:border-box !important;
+  }
+
+  .menu-product-body .product-details-extra .detail-row,
+  .menu-product .product-details-extra .detail-row{
+    display:grid !important;
+    gap:4px !important;
+    width:100% !important;
+  }
+
+  .menu-product-body .product-details-extra .detail-label,
+  .menu-product .product-details-extra .detail-label{
+    display:block !important;
+    color:#9a653d !important;
+    font-size:10px !important;
+    font-weight:900 !important;
+    letter-spacing:.08em !important;
+    line-height:1.25 !important;
+    text-transform:uppercase !important;
+  }
+
+  .menu-product-body .product-details-extra .detail-value,
+  .menu-product .product-details-extra .detail-value{
+    display:block !important;
+    color:#5f4030 !important;
+    font-size:13px !important;
+    font-weight:700 !important;
+    line-height:1.5 !important;
+  }
+}
+
+
+/* Definitive mobile product badge fix */
+.product-badge{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:auto !important;
+  max-width:max-content !important;
+  min-height:24px !important;
+  padding:5px 9px !important;
+  border-radius:999px !important;
+  background:#fff2d9 !important;
+  border:1px solid rgba(122,77,43,.14) !important;
+  color:#7a4d2b !important;
+  font-family:"Nunito",sans-serif !important;
+  font-size:10px !important;
+  font-weight:900 !important;
+  line-height:1 !important;
+  letter-spacing:.02em !important;
+  white-space:nowrap !important;
+  box-shadow:0 4px 12px rgba(122,77,43,.08) !important;
+  box-sizing:border-box !important;
+}
+
+@media(max-width:620px){
+  .menu-product-body h3{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    align-items:center !important;
+    gap:8px !important;
+  }
+
+  .menu-product-body h3 .product-badge,
+  .menu-product h3 .product-badge,
+  .product-card h3 .product-badge{
+    display:inline-flex !important;
+    width:auto !important;
+    max-width:max-content !important;
+    min-height:24px !important;
+    padding:5px 9px !important;
+    border-radius:999px !important;
+    background:#fff2d9 !important;
+    border:1px solid rgba(122,77,43,.14) !important;
+    color:#7a4d2b !important;
+    white-space:nowrap !important;
+    box-shadow:0 4px 12px rgba(122,77,43,.08) !important;
+  }
+}
