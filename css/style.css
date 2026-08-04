@@ -1145,27 +1145,70 @@ right:5px;
 
 }
 
-/* MENU BANNER */
+/* ==========================
+MENU BANNER
+========================== */
+
 
 .menu-banner{
+
+width:100%;
 
 max-width:1200px;
 
 margin:50px auto;
 
-padding:20px;
+padding:0;
 
 }
+
 
 
 .menu-banner img{
 
 width:100%;
 
+height:auto;
+
+display:block;
+
 border-radius:35px;
 
 box-shadow:
 
 0 20px 50px rgba(75,48,37,.15);
+
+}
+
+
+
+/* MOBILE MENU BANNER */
+
+
+@media(max-width:768px){
+
+
+.menu-banner{
+
+width:100%;
+
+margin:30px 15px;
+
+padding:0;
+
+}
+
+
+
+.menu-banner img{
+
+width:100%;
+
+height:auto;
+
+border-radius:25px;
+
+}
+
 
 }
