@@ -14,7 +14,6 @@ body{
 }
 
 
-
 img{
 
     max-width:100%;
@@ -55,7 +54,6 @@ a{
 }
 
 
-
 .logo img{
 
     width:110px;
@@ -71,7 +69,6 @@ nav{
     gap:30px;
 
 }
-
 
 
 nav a{
@@ -150,6 +147,28 @@ nav a{
 
 
 
+/* TELEGRAM BUTTON FIX */
+
+
+.mobile-menu .telegram{
+
+    display:block;
+
+    background:#5b3828;
+
+    color:white !important;
+
+    text-align:center;
+
+    padding:12px 20px;
+
+    border-radius:30px;
+
+    margin-top:30px;
+
+}
+
+
 
 
 /* BUTTON */
@@ -158,6 +177,7 @@ nav a{
 .button,
 .product-card a,
 .telegram{
+
 
     display:inline-block;
 
@@ -207,13 +227,11 @@ nav a{
 }
 
 
-
 .hero-text h1{
 
     font-size:52px;
 
 }
-
 
 
 .hero-text h2{
@@ -245,6 +263,8 @@ nav a{
 
 
 .hero-image img{
+
+    width:100%;
 
     border-radius:30px;
 
@@ -294,6 +314,7 @@ nav a{
     font-size:40px;
 
 }
+
 
 
 
@@ -371,7 +392,6 @@ nav a{
 
 
 
-
 /* ABOUT */
 
 
@@ -434,7 +454,6 @@ footer{
 
 
 @media(max-width:768px){
-
 
 
 .header{
@@ -545,6 +564,14 @@ nav{
 .collection h2{
 
     font-size:28px;
+
+}
+
+
+
+.mobile-menu .telegram{
+
+    color:white !important;
 
 }
 
