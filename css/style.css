@@ -233,3 +233,134 @@ button{font:inherit}
     grid-template-columns:1fr;
   }
 }
+
+
+/* Candy Bear V2 Final refinements */
+.category-title p{
+  max-width:680px;
+  margin-top:10px;
+  color:var(--muted);
+  font-size:16px;
+}
+
+.menu-product{
+  display:flex;
+  flex-direction:column;
+}
+
+.menu-product img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+}
+
+.menu-product-body{
+  display:flex;
+  flex:1;
+  flex-direction:column;
+}
+
+.menu-product-body > p{
+  line-height:1.65;
+}
+
+.effect-list{
+  margin-top:16px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.effect-list span{
+  padding:7px 11px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:var(--cream);
+  color:var(--brown-2);
+  font-size:12px;
+  font-weight:800;
+}
+
+.menu-product-body > a{
+  width:100%;
+  min-height:50px;
+  margin-top:auto;
+  padding:13px 18px;
+  align-items:center;
+  justify-content:center;
+  border-radius:999px;
+  background:var(--brown);
+  color:#fff;
+}
+
+.menu-overlay{
+  position:fixed;
+  inset:0;
+  z-index:1150;
+  background:rgba(75,48,37,.34);
+  opacity:0;
+  visibility:hidden;
+  transition:.3s ease;
+}
+
+.menu-overlay.active{
+  opacity:1;
+  visibility:visible;
+}
+
+.mobile-close{
+  position:absolute;
+  top:22px;
+  right:24px;
+  border:0;
+  background:transparent;
+  color:var(--brown);
+  font-size:34px;
+  cursor:pointer;
+}
+
+body.mobile-menu-open{
+  overflow:hidden;
+}
+
+@media(max-width:620px){
+  .page-hero{
+    margin-top:44px;
+  }
+
+  .page-hero h1{
+    font-size:48px;
+  }
+
+  .collection-banner{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+    border-radius:22px;
+  }
+
+  .menu-product-body{
+    padding:22px 18px;
+  }
+
+  .menu-product h3{
+    font-size:32px;
+  }
+
+  .menu-product strong{
+    font-size:18px;
+  }
+
+  .menu-product-body > p{
+    font-size:16px;
+  }
+
+  .effect-list span{
+    font-size:13px;
+  }
+
+  .menu-product-body > a{
+    min-height:54px;
+    font-size:15px;
+  }
+}
