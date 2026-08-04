@@ -1,80 +1,49 @@
-// Candy Bear Website Script
+// Mobile Menu
 
+function openMenu(){
 
-// MOBILE MENU
+    const menu = document.getElementById("mobileMenu");
 
-const menuBtn = document.querySelector(".menu-btn");
-const nav = document.querySelector("nav");
+    if(menu){
 
+        menu.classList.toggle("active");
 
-if(menuBtn){
-
-menuBtn.addEventListener("click",()=>{
-
-nav.classList.toggle("active");
-
-});
+    }
 
 }
 
 
 
+function closeMenu(){
 
-// SIMPLE PAGE LOAD ANIMATION
+    const menu = document.getElementById("mobileMenu");
 
+    if(menu){
 
-document.addEventListener("DOMContentLoaded",()=>{
+        menu.classList.remove("active");
 
+    }
 
-const elements = document.querySelectorAll(
-".hero-text, .hero-image, .feature-card, .product-card"
-);
-
-
-
-elements.forEach((item,index)=>{
-
-
-item.style.opacity="0";
-item.style.transform="translateY(30px)";
-
-
-setTimeout(()=>{
-
-
-item.style.transition="all .6s ease";
-
-item.style.opacity="1";
-
-item.style.transform="translateY(0)";
-
-
-},index*150);
+}
 
 
 
-});
+// close when clicking outside
+
+document.addEventListener("click", function(e){
+
+    const menu = document.getElementById("mobileMenu");
+
+    const button = document.querySelector(".menu-btn");
 
 
-});
+    if(menu && 
+       !menu.contains(e.target) && 
+       !button.contains(e.target)){
 
+        menu.classList.remove("active");
 
-
-
-// PRODUCT IMAGE ERROR CHECK
-
-
-const images = document.querySelectorAll("img");
-
-
-images.forEach(img=>{
-
-
-img.addEventListener("error",()=>{
-
-img.style.display="none";
-
-});
+    }
 
 
 });
