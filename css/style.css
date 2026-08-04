@@ -373,3 +373,9 @@ body.mobile-menu-open{
     display:none;
   }
 }
+
+/* Definitive product-page fix */
+body.menu-page .floating-telegram,
+body.products-page .floating-telegram{
+  display:none !important;
+}
