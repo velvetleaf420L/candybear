@@ -309,3 +309,232 @@
     border-radius:24px;
   }
 }
+
+
+/* =========================================
+   ABOUT PAGE HEADER / NAV / FOOTER FIX
+   Self-contained so the page stays correct
+   even when the shared stylesheet is cached.
+========================================= */
+
+.about-page-body{
+  margin:0 !important;
+  min-height:100vh;
+  overflow-x:hidden;
+  background:#fff6e8;
+  color:#4e3025;
+  font-family:"Nunito",Arial,sans-serif;
+}
+
+.about-page-body .header{
+  position:sticky;
+  top:0;
+  z-index:5000;
+  width:min(1180px,calc(100% - 32px));
+  min-height:86px;
+  margin:18px auto 0;
+  padding:12px 22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  border:1px solid rgba(122,77,43,.12);
+  border-radius:30px;
+  background:rgba(255,250,241,.96);
+  box-shadow:0 12px 34px rgba(75,48,37,.10);
+  box-sizing:border-box;
+  backdrop-filter:blur(12px);
+}
+
+.about-page-body .header .logo{
+  flex:0 0 auto;
+  width:190px;
+  max-width:38vw;
+  height:60px;
+  display:flex;
+  align-items:center;
+}
+
+.about-page-body .header .logo img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:190px !important;
+  max-height:60px !important;
+  object-fit:contain !important;
+}
+
+.about-page-body .header nav{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:8px;
+  margin-left:auto;
+}
+
+.about-page-body .header nav a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:42px;
+  padding:0 14px;
+  border-radius:999px;
+  color:#5f4030;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:900;
+  white-space:nowrap;
+}
+
+.about-page-body .header nav a:hover,
+.about-page-body .header nav a[href="about.html"]{
+  background:#fff0d8;
+  color:#9a6038;
+}
+
+.about-page-body .menu-btn{
+  display:none;
+  width:48px;
+  height:48px;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 48px;
+  border-radius:16px;
+  background:#fff0d8;
+  color:#4e3025;
+  font-size:30px;
+  line-height:1;
+  cursor:pointer;
+}
+
+.about-page-body .mobile-menu{
+  position:fixed;
+  top:0;
+  right:-100%;
+  z-index:6000;
+  width:min(310px,86vw);
+  height:100vh;
+  padding:96px 24px 28px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  background:#fffaf1;
+  box-shadow:-18px 0 50px rgba(75,48,37,.18);
+  transition:right .25s ease;
+  box-sizing:border-box;
+}
+
+.about-page-body .mobile-menu.active{
+  right:0;
+}
+
+.about-page-body .mobile-menu a{
+  display:flex;
+  align-items:center;
+  min-height:48px;
+  padding:0 16px;
+  border-radius:15px;
+  color:#5f4030;
+  text-decoration:none;
+  font-weight:900;
+}
+
+.about-page-body .mobile-menu a:hover{
+  background:#fff0d8;
+}
+
+.about-page-body footer{
+  width:min(1180px,calc(100% - 32px));
+  margin:0 auto 32px;
+  padding:28px;
+  display:grid;
+  justify-items:center;
+  gap:12px;
+  border:1px solid rgba(122,77,43,.10);
+  border-radius:28px;
+  background:#fffaf1;
+  text-align:center;
+  box-sizing:border-box;
+}
+
+.about-page-body footer .footer-logo{
+  width:120px;
+}
+
+.about-page-body footer .footer-logo img{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+}
+
+.about-page-body footer p{
+  margin:0;
+  color:#806152;
+}
+
+.about-page-body footer a{
+  color:#9a6038;
+  font-weight:900;
+  text-decoration:none;
+}
+
+@media(max-width:900px){
+  .about-page-body .header{
+    min-height:76px;
+    margin-top:10px;
+    padding:10px 14px;
+    border-radius:24px;
+  }
+
+  .about-page-body .header .logo{
+    width:165px;
+    height:54px;
+  }
+
+  .about-page-body .header .logo img{
+    max-width:165px !important;
+    max-height:54px !important;
+  }
+
+  .about-page-body .header nav{
+    display:none !important;
+  }
+
+  .about-page-body .menu-btn{
+    display:flex !important;
+  }
+}
+
+@media(max-width:620px){
+  .about-page-body .header{
+    width:calc(100% - 20px);
+    min-height:70px;
+    padding:8px 12px;
+    border-radius:22px;
+  }
+
+  .about-page-body .header .logo{
+    width:145px;
+    max-width:62vw;
+    height:50px;
+  }
+
+  .about-page-body .header .logo img{
+    max-width:145px !important;
+    max-height:50px !important;
+  }
+
+  .about-page-body .menu-btn{
+    width:44px;
+    height:44px;
+    flex-basis:44px;
+    font-size:27px;
+  }
+
+  .about-page-body footer{
+    width:calc(100% - 20px);
+    padding:24px 18px;
+    border-radius:22px;
+  }
+}
