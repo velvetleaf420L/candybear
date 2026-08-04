@@ -284,7 +284,7 @@ button{font:inherit}
 .menu-product-body > a{
   width:100%;
   min-height:50px;
-  margin-top:auto;
+  margin-top:22px;
   padding:13px 18px;
   align-items:center;
   justify-content:center;
@@ -378,4 +378,29 @@ body.mobile-menu-open{
 body.menu-page .floating-telegram,
 body.products-page .floating-telegram{
   display:none !important;
+}
+
+
+/* Card button spacing and overlay fix — 2026-08-05 */
+.menu-product{
+  height:auto !important;
+  overflow:hidden;
+}
+.menu-product-body{
+  min-height:0;
+  padding-bottom:24px;
+}
+.menu-product-body > a{
+  position:relative;
+  z-index:1;
+  flex:none;
+  margin-top:22px !important;
+}
+.floating-telegram{
+  display:none !important;
+}
+@media(max-width:620px){
+  .menu-product-body > a{
+    margin-top:20px !important;
+  }
 }
