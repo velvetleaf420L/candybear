@@ -1,62 +1,79 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 
 body{
 
-    font-family:Arial, Helvetica, sans-serif;
-    background:#fff8ed;
-    color:#4b3025;
+font-family:Arial, Helvetica, sans-serif;
+
+background:#fff8ed;
+
+color:#4b3025;
+
+line-height:1.5;
 
 }
+
 
 
 img{
 
-    max-width:100%;
-    display:block;
+max-width:100%;
+
+display:block;
 
 }
+
 
 
 a{
 
-    text-decoration:none;
+text-decoration:none;
+
+color:inherit;
 
 }
+
 
 
 
 
 /* HEADER */
 
-
 .header{
 
-    width:100%;
-    max-width:1200px;
+max-width:1200px;
 
-    margin:auto;
+margin:20px auto;
 
-    display:flex;
+padding:18px 35px;
 
-    justify-content:space-between;
+display:flex;
 
-    align-items:center;
+align-items:center;
 
-    padding:20px 30px;
+justify-content:space-between;
 
-    background:white;
+background:rgba(255,255,255,.85);
+
+border-radius:25px;
+
+box-shadow:0 10px 30px rgba(75,48,37,.08);
+
+position:relative;
+
+z-index:10;
 
 }
 
 
+
 .logo img{
 
-    width:110px;
+width:100px;
 
 }
 
@@ -64,60 +81,73 @@ a{
 
 nav{
 
-    display:flex;
+display:flex;
 
-    gap:30px;
+gap:35px;
 
 }
+
 
 
 nav a{
 
-    font-weight:bold;
+font-weight:700;
 
-    color:#4b3025;
+color:#4b3025;
+
+transition:.3s;
 
 }
+
+
+
+nav a:hover{
+
+color:#b8794d;
+
+}
+
 
 
 
 .menu-btn{
 
-    display:none;
+display:none;
 
-    font-size:30px;
+font-size:32px;
 
-    cursor:pointer;
+cursor:pointer;
 
 }
+
+
 
 
 
 
 /* MOBILE MENU */
 
-
 .mobile-menu{
 
-    position:fixed;
+position:fixed;
 
-    top:0;
+top:0;
 
-    right:-320px;
+right:-320px;
 
-    width:280px;
+width:290px;
 
-    height:100vh;
+height:100vh;
 
-    background:#fff8ed;
+background:#fff8ed;
 
-    padding:80px 30px;
+padding:100px 35px;
 
-    z-index:999;
+z-index:999;
 
-    box-shadow:-5px 0 20px rgba(0,0,0,.15);
+box-shadow:-10px 0 30px rgba(0,0,0,.15);
 
-    transition:.3s ease;
+transition:.35s;
 
 }
 
@@ -125,7 +155,7 @@ nav a{
 
 .mobile-menu.active{
 
-    right:0;
+right:0;
 
 }
 
@@ -133,63 +163,73 @@ nav a{
 
 .mobile-menu a{
 
-    display:block;
+display:block;
 
-    margin-bottom:25px;
+font-size:21px;
 
-    font-size:20px;
+font-weight:700;
 
-    font-weight:bold;
+margin-bottom:28px;
 
-    color:#4b3025;
+color:#4b3025;
 
 }
 
-
-
-/* TELEGRAM BUTTON FIX */
 
 
 .mobile-menu .telegram{
 
-    display:block;
+background:#5b3828;
 
-    background:#5b3828;
+color:white !important;
 
-    color:white !important;
+text-align:center;
 
-    text-align:center;
+padding:14px;
 
-    padding:12px 20px;
-
-    border-radius:30px;
-
-    margin-top:30px;
+border-radius:30px;
 
 }
+
 
 
 
 
 /* BUTTON */
 
-
 .button,
-.product-card a,
-.telegram{
+.telegram,
+.product-card a{
 
 
-    display:inline-block;
+display:inline-block;
 
-    background:#5b3828;
+background:#5b3828;
 
-    color:white;
+color:white;
 
-    padding:12px 22px;
+padding:13px 28px;
 
-    border-radius:30px;
+border-radius:40px;
 
-    margin-top:20px;
+font-weight:bold;
+
+transition:.3s;
+
+margin-top:20px;
+
+
+}
+
+
+
+.button:hover,
+.telegram:hover,
+.product-card a:hover{
+
+transform:translateY(-3px);
+
+background:#754733;
 
 }
 
@@ -202,19 +242,25 @@ nav a{
 
 .hero{
 
-    max-width:1200px;
+max-width:1200px;
 
-    margin:40px auto;
+margin:70px auto;
 
-    padding:0 30px;
+padding:40px;
 
-    display:flex;
+display:flex;
 
-    align-items:center;
+align-items:center;
 
-    justify-content:space-between;
+gap:60px;
 
-    gap:40px;
+background:linear-gradient(
+135deg,
+#fff8ed,
+#fff1dc
+);
+
+border-radius:40px;
 
 }
 
@@ -222,23 +268,27 @@ nav a{
 
 .hero-text{
 
-    flex:1;
+flex:1;
 
 }
+
 
 
 .hero-text h1{
 
-    font-size:52px;
+font-size:58px;
+
+letter-spacing:-2px;
 
 }
 
 
+
 .hero-text h2{
 
-    font-size:32px;
+font-size:35px;
 
-    margin:15px 0;
+margin:20px 0;
 
 }
 
@@ -246,9 +296,9 @@ nav a{
 
 .hero-text p{
 
-    font-size:18px;
+font-size:18px;
 
-    line-height:1.6;
+max-width:500px;
 
 }
 
@@ -256,7 +306,7 @@ nav a{
 
 .hero-image{
 
-    flex:1;
+flex:1;
 
 }
 
@@ -264,11 +314,12 @@ nav a{
 
 .hero-image img{
 
-    width:100%;
+border-radius:35px;
 
-    border-radius:30px;
+box-shadow:0 20px 40px rgba(75,48,37,.15);
 
 }
+
 
 
 
@@ -279,17 +330,15 @@ nav a{
 
 .features{
 
-    max-width:1200px;
+max-width:1200px;
 
-    margin:60px auto;
+margin:60px auto;
 
-    padding:0 30px;
+display:grid;
 
-    display:grid;
+grid-template-columns:repeat(3,1fr);
 
-    grid-template-columns:repeat(3,1fr);
-
-    gap:25px;
+gap:30px;
 
 }
 
@@ -297,13 +346,25 @@ nav a{
 
 .feature-card{
 
-    background:white;
+background:white;
 
-    padding:30px;
+padding:35px 25px;
 
-    border-radius:25px;
+border-radius:30px;
 
-    text-align:center;
+text-align:center;
+
+box-shadow:0 10px 30px rgba(75,48,37,.08);
+
+transition:.3s;
+
+}
+
+
+
+.feature-card:hover{
+
+transform:translateY(-8px);
 
 }
 
@@ -311,7 +372,7 @@ nav a{
 
 .icon{
 
-    font-size:40px;
+font-size:40px;
 
 }
 
@@ -319,18 +380,17 @@ nav a{
 
 
 
-/* PRODUCTS */
+
+/* COLLECTION */
 
 
 .collection{
 
-    max-width:1200px;
+max-width:1200px;
 
-    margin:60px auto;
+margin:80px auto;
 
-    padding:0 30px;
-
-    text-align:center;
+text-align:center;
 
 }
 
@@ -339,21 +399,31 @@ nav a{
 .collection h1,
 .collection h2{
 
-    font-size:38px;
+font-size:42px;
 
 }
 
 
 
+.collection p{
+
+color:#806554;
+
+}
+
+
+
+
+
 .products{
 
-    margin-top:40px;
+margin-top:45px;
 
-    display:grid;
+display:grid;
 
-    grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(3,1fr);
 
-    gap:30px;
+gap:30px;
 
 }
 
@@ -361,11 +431,25 @@ nav a{
 
 .product-card{
 
-    background:white;
+background:white;
 
-    padding:15px;
+padding:15px;
 
-    border-radius:25px;
+border-radius:30px;
+
+overflow:hidden;
+
+box-shadow:0 10px 30px rgba(75,48,37,.1);
+
+transition:.35s;
+
+}
+
+
+
+.product-card:hover{
+
+transform:translateY(-10px);
 
 }
 
@@ -373,9 +457,17 @@ nav a{
 
 .product-card img{
 
-    width:100%;
+border-radius:25px;
 
-    border-radius:20px;
+transition:.35s;
+
+}
+
+
+
+.product-card:hover img{
+
+transform:scale(1.04);
 
 }
 
@@ -383,11 +475,12 @@ nav a{
 
 .product-card h3{
 
-    margin-top:15px;
+font-size:22px;
 
-    font-size:22px;
+margin-top:18px;
 
 }
+
 
 
 
@@ -397,13 +490,19 @@ nav a{
 
 .about-preview{
 
-    max-width:900px;
+max-width:900px;
 
-    margin:60px auto;
+margin:80px auto;
 
-    padding:40px 30px;
+padding:50px;
 
-    text-align:center;
+text-align:center;
+
+background:white;
+
+border-radius:40px;
+
+box-shadow:0 15px 40px rgba(75,48,37,.08);
 
 }
 
@@ -411,11 +510,12 @@ nav a{
 
 .about-preview img{
 
-    width:160px;
+width:160px;
 
-    margin:auto;
+margin:auto;
 
 }
+
 
 
 
@@ -426,13 +526,15 @@ nav a{
 
 footer{
 
-    background:#4b3025;
+margin-top:80px;
 
-    color:white;
+background:#4b3025;
 
-    text-align:center;
+color:white;
 
-    padding:40px;
+padding:50px;
+
+text-align:center;
 
 }
 
@@ -440,9 +542,9 @@ footer{
 
 .footer-logo img{
 
-    width:90px;
+width:90px;
 
-    margin:auto;
+margin:auto;
 
 }
 
@@ -458,7 +560,9 @@ footer{
 
 .header{
 
-    padding:15px 20px;
+margin:15px;
+
+padding:15px 20px;
 
 }
 
@@ -466,7 +570,7 @@ footer{
 
 .logo img{
 
-    width:80px;
+width:75px;
 
 }
 
@@ -474,7 +578,7 @@ footer{
 
 nav{
 
-    display:none;
+display:none;
 
 }
 
@@ -482,7 +586,7 @@ nav{
 
 .menu-btn{
 
-    display:block;
+display:block;
 
 }
 
@@ -490,11 +594,15 @@ nav{
 
 .hero{
 
-    flex-direction:column;
+margin:30px 15px;
 
-    text-align:center;
+padding:25px;
 
-    padding:0 15px;
+flex-direction:column;
+
+text-align:center;
+
+gap:30px;
 
 }
 
@@ -502,7 +610,7 @@ nav{
 
 .hero-text h1{
 
-    font-size:38px;
+font-size:40px;
 
 }
 
@@ -510,7 +618,7 @@ nav{
 
 .hero-text h2{
 
-    font-size:25px;
+font-size:26px;
 
 }
 
@@ -518,35 +626,9 @@ nav{
 
 .features{
 
-    grid-template-columns:1fr;
+grid-template-columns:1fr;
 
-    padding:0 15px;
-
-}
-
-
-
-.products{
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:15px;
-
-}
-
-
-
-.product-card{
-
-    padding:10px;
-
-}
-
-
-
-.product-card h3{
-
-    font-size:17px;
+margin:40px 15px;
 
 }
 
@@ -554,7 +636,7 @@ nav{
 
 .collection{
 
-    padding:0 15px;
+margin:50px 15px;
 
 }
 
@@ -563,17 +645,46 @@ nav{
 .collection h1,
 .collection h2{
 
-    font-size:28px;
+font-size:32px;
 
 }
 
 
 
-.mobile-menu .telegram{
+.products{
 
-    color:white !important;
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
 
 }
+
+
+
+.product-card{
+
+padding:10px;
+
+}
+
+
+
+.product-card h3{
+
+font-size:17px;
+
+}
+
+
+
+.about-preview{
+
+margin:40px 15px;
+
+padding:30px 20px;
+
+}
+
 
 
 }
