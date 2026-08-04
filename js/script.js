@@ -17,7 +17,6 @@ function openMenu(){
 
 
 
-
 function closeMenu(){
 
     const menu = document.getElementById("mobileMenu");
@@ -34,36 +33,25 @@ function closeMenu(){
 
 
 
-// Close menu when clicking outside
-
-
 document.addEventListener("click", function(e){
-
 
     const menu = document.getElementById("mobileMenu");
 
     const button = document.querySelector(".menu-btn");
 
 
-
     if(menu && button){
 
-
         if(
-
             !menu.contains(e.target) &&
-
             !button.contains(e.target)
-
         ){
 
             menu.classList.remove("active");
 
         }
 
-
     }
-
 
 });
 
@@ -97,7 +85,6 @@ const products = {
 
 
 
-
     mango:{
 
         name:"Mango",
@@ -109,7 +96,6 @@ const products = {
         info:"Product information will appear here."
 
     },
-
 
 
 
@@ -127,8 +113,6 @@ const products = {
 
 
 
-
-
     superboof:{
 
         name:"Super Boof",
@@ -140,8 +124,6 @@ const products = {
         info:"Product information will appear here."
 
     },
-
-
 
 
 
@@ -159,8 +141,6 @@ const products = {
 
 
 
-
-
     "white-rhino":{
 
         name:"White Rhino",
@@ -172,8 +152,6 @@ const products = {
         info:"Product information will appear here."
 
     },
-
-
 
 
 
@@ -191,8 +169,6 @@ const products = {
 
 
 
-
-
     cookies:{
 
         name:"Cookies",
@@ -204,8 +180,6 @@ const products = {
         info:"Product information will appear here."
 
     },
-
-
 
 
 
@@ -230,7 +204,10 @@ const products = {
 
 
 
-// Read product ID from URL
+
+// ============================
+// Load Product
+// ============================
 
 
 const params = new URLSearchParams(window.location.search);
@@ -240,29 +217,16 @@ const productID = params.get("id");
 
 
 
-
-
-
-// Update product page
-
-
 if(productID && products[productID]){
 
 
-    const image =
-    document.getElementById("productImage");
+    const image = document.getElementById("productImage");
 
+    const name = document.getElementById("productName");
 
-    const name =
-    document.getElementById("productName");
+    const description = document.getElementById("productDescription");
 
-
-    const description =
-    document.getElementById("productDescription");
-
-
-    const info =
-    document.getElementById("productInfo");
+    const info = document.getElementById("productInfo");
 
 
 
