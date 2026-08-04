@@ -364,3 +364,12 @@ body.mobile-menu-open{
     font-size:15px;
   }
 }
+
+
+/* Mobile fix: prevent floating Telegram button from covering product cards */
+@media(max-width:620px){
+  body.menu-page .floating-telegram,
+  body.products-page .floating-telegram{
+    display:none;
+  }
+}
